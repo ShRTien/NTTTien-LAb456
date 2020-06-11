@@ -14,14 +14,14 @@ namespace NguyenThithuyTien_Lab456.Controllers
         {
             _dbcontext = new ApplicationDbContext();
         }
-        public ActionResult Index()
-        {
-            var upcomingCourse = _dbcontext.Courses
-                .Include(c => c.Lecturer)
-                .Include(c => c.Category)
-                .Where(c => c.DateTime > DateTime.Now);
-            return View(upcomingCourse);
-        }
+     //   public ActionResult Index()
+       // {
+       //     var upcomingCourse = _dbcontext.Courses
+                //.Include(c => c.Lecturer)
+               // .Include(c => c.Category)
+     //           .Where(c => c.DateTime > DateTime.Now);
+     //       return View(upcomingCourse);
+     //   }
         
         public ActionResult About()
         {
