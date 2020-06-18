@@ -9,5 +9,6 @@ namespace NguyenThithuyTien_Lab456.Controllers
 {
     public class AttendancesController : ApiController
     {
+        
     }
 }
