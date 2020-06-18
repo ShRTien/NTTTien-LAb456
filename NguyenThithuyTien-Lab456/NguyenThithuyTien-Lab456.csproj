@@ -214,10 +214,15 @@
     <Compile Include="Migrations\202006110837046_AddNameColumToApplicationUser.Designer.cs">
       <DependentUpon>202006110837046_AddNameColumToApplicationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006180840005_AddAttendance.cs" />
+    <Compile Include="Migrations\202006180840005_AddAttendance.Designer.cs">
+      <DependentUpon>202006180840005_AddAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
+    <Compile Include="Models\Attendance.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -238,9 +243,6 @@
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -309,6 +311,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006110837046_AddNameColumToApplicationUser.resx">
       <DependentUpon>202006110837046_AddNameColumToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006180840005_AddAttendance.resx">
+      <DependentUpon>202006180840005_AddAttendance.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

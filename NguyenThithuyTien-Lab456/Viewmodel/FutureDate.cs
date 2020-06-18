@@ -12,7 +12,7 @@ namespace NguyenThithuyTien_Lab456.Viewmodel
         public override bool IsValid(object value)
         {
             DateTime datetime;
-            var isValid= DateTime.TryParseExact(Convert.ToString(value),"dd/m/yyyy", CultureInfo.CurrentCulture, DateTimeStyles.None, out datetime);
+            var isValid= DateTime.TryParseExact(Convert.ToString(value),"dd/mm/yyyy", CultureInfo.CurrentCulture, DateTimeStyles.None, out datetime);
             return (isValid && datetime > DateTime.Now);
         }
     }

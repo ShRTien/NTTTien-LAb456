@@ -21,7 +21,7 @@ namespace NguyenThithuyTien_Lab456.Viewmodel
         public IEnumerable<Category> Categories { get; set; }
         public DateTime GetDatetime()
         {
-            return DateTime.Parse(string.Format("{0}{1}", Date, Time));
+            return DateTime.Parse(string.Format("{0} {1}", Date, Time));
         }
     }
 }
